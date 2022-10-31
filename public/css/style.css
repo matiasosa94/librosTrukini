@@ -1,0 +1,98 @@
+
+body {
+    margin: 0%;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(20, 20, 16);
+}
+#main-header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(20, 20, 16);
+    height: 100px;
+    padding-bottom: 25px;
+    
+}
+
+#second-header{
+    display: flex;
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 200px;
+    background-color: #ffff60;
+    align-content: flex-end;    
+}
+#second-header h2{
+    font-size: 200%;
+    position: relative;
+    top:65%;
+    left: 30%;
+}
+
+#logo-box {
+    z-index: 1;
+    background-color: rgb(20, 20, 16);
+}
+
+#logo-box img {
+    width: 100%;
+    height: 200%;
+    background-color: rgb(20, 20, 16);
+    margin-left: 25px;
+}
+
+#menu-box {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(20, 20, 16);
+    width: 100%;
+}
+
+#menu-box ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
+    background-color: rgb(20, 20, 16);
+}
+
+#menu-box ul li {
+    color: rgb(20, 20, 16);
+    list-style: none;
+    margin: auto;
+    font-family:'Oswald', sans-serif;
+}
+
+
+.button {
+    align-content: space-around;
+    background: gold;
+    border-bottom: 5px solid darkgoldenrod;
+    border-right: 1px solid darkgoldenrod;
+    border-radius: 12px;
+    box-shadow: 3px 3px 3px darkgoldenrod;
+    cursor: pointer;
+    display: block;
+    font-size: 25px;
+    padding: 20px 20px;
+    text-align: center;
+    transition: all 0.2s ease 0s;
+}
+
+.button:hover {
+    background: yellow;
+}
+
+.button:active {
+    box-shadow: 2px 2px 2px #777, 0px 0px 15px 0px yellow;
+    border-bottom: 1px solid darkgoldenrod;
+    text-shadow: 0px 0px 5px #ffe500, 0px 0px 5px #ffe500;
+    transform: translateY(4px);
+    transition: all 0.1s ease 0s;
+    margin: 80px auto 76px auto;
+}

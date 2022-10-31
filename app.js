@@ -1,3 +1,5 @@
+const routerIndex = require("./src/routes/routerIndex");
+
 const express = require("express");
 const path = require("path");
 const methodOverride = require("method-override");
@@ -20,6 +22,8 @@ app.use(session({
 }));
 
 
+
+app.use("/", routerIndex);
 
 
 
